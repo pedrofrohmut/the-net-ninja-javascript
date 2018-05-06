@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+nav.menu {
+    width: 100vw;
+    height: 35px;
+    background-color: #33333399;
+    align-content: center;
+    position: relative;
+}
+nav.menu ul {
+    padding: 0;
+    margin: 0;
+    top: 8px;
+    position: absolute;
+}
+nav.menu ul > li {
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+}
