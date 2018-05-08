@@ -1,162 +1,180 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <title>Restaurant | Responsive Web Design</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+<script>
+// Picture element HTML5 shiv
+document.createElement( "picture" );
+</script>
+
+<!-- BOOTSTRAP: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- BOOTSTRAP: Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- CUSTOM STYLESHEET -->
+<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+<title>Restaurant | Responsive Web Design</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
-
 <body>
-
-    <header>
-        <div class="wrapper">
-            <h1 class="logo">Resto</h1>
-            <nav>
-                <h2>Main Navigation</h2>
-                <ul>
-                    <li>
-                        <a href="">Our Story</a>
-                    </li>
-                    <li>
-                        <a href="">Menu</a>
-                    </li>
-                    <li>
-                        <a href="">Reservations</a>
-                    </li>
-                    <li>
-                        <a href="">News</a>
-                    </li>
-                    <li>
-                        <a href="">Reviews</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Start homepage content -->
-
-    <div id="main-banner">
-        <img src="images/banner.jpg" alt="Welcome to Resto">
-    </div>
-
+<header>
     <div class="wrapper">
-        <section id="home-menu">
-            <h2>Menu</h2>
+        <h1 class="logo">Resto</h1>
+        <nav>
+            <a href="" class="burger-nav"></a>
+            <h2>Main Navigation</h2>
             <ul>
                 <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
+                    <a href="">Our Story</a>
                 </li>
                 <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
+                    <a href="">Menu</a>
                 </li>
                 <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
+                    <a href="">Reservations</a>
                 </li>
                 <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
+                    <a href="">News</a>
                 </li>
                 <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
-                </li>
-                <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
-                </li>
-                <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
-                </li>
-                <li>
-                    <span class="dish">Voluptate Cillum fugiat</span>
-                    <span class="price">$30</span>
-                    <span class="description">Cheese, tomato, mushrooms, onions</span>
+                    <a href="">Reviews</a>
                 </li>
             </ul>
-        </section>
-
-        <section id="featured">
-            <ul>
-                <li>
-                    <img src="images/thumb-1.jpg">
-                    <a href="">Fugiat nulla sint</a>
-                    <span>$30</span>
-                    <span class="rating"></span>
-                </li>
-                <li>
-                    <img src="images/thumb-1.jpg">
-                    <a href="">Fugiat nulla sint</a>
-                    <span>$30</span>
-                    <span class="rating"></span>
-                </li>
-                <li>
-                    <img src="images/thumb-1.jpg">
-                    <a href="">Fugiat nulla sint</a>
-                    <span>$30</span>
-                    <span class="rating"></span>
-                </li>
-                <li>
-                    <img src="images/thumb-1.jpg">
-                    <a href="">Fugiat nulla sint</a>
-                    <span>$30</span>
-                    <span class="rating"></span>
-                </li>
-            </ul>
-        </section>
+        </nav>
     </div>
-    <!-- End homepage content -->
+</header>
 
-    <footer>
-        <div class="wrapper">
-            <ul>
-                <li>New York Restaurant</li>
-                <li>3926 Anmoore Road</li>
-                <li>New York, NY 10014</li>
-                <li>718-749-1714</li>
-            </ul>
-            <ul>
-                <li>France Restaurant</li>
-                <li>68, rue da le Couronne</li>
-                <li>75002 PARIS</li>
-                <li>02.94.23.69.56</li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Blog</a>
-                </li>
-                <li>
-                    <a href="">Careers</a>
-                </li>
-                <li>
-                    <a href="">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="images/white-logo.png" alt="logo">
-                </li>
-                <li>&copy; All rights reserved 2015</li>
+<!-- Start homepage content -->
 
-            </ul>
-        </div>
-    </footer>
+<div id="main-banner">
+    <!-- <img src="images/banner.jpg" alt="Welcome to Resto"> -->
+    <picture>
+        <source media="(max-width: 480px)" srcset="images/banner-small.jpg">
+        <source media="(max-width: 768px)" srcset="images/banner-medium.jpg">
+        <img srcset="images/banner.jpg">
+    </picture>
+</div>
 
+<div class="wrapper">
+    <section id="home-menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+            <li>
+                <span class="dish">Voluptate Cillum fugiat</span>
+                <span class="price">$30</span>
+                <span class="description">Cheese, tomato, mushrooms, onions</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="featured">
+        <ul>
+            <li>
+                <img src="images/thumb-1.jpg">
+                <a href="">Fugiat nulla sint</a>
+                <span>$30</span>
+                <span class="rating"></span>
+            </li>
+            <li>
+                <img src="images/thumb-1.jpg">
+                <a href="">Fugiat nulla sint</a>
+                <span>$30</span>
+                <span class="rating"></span>
+            </li>
+            <li>
+                <img src="images/thumb-1.jpg">
+                <a href="">Fugiat nulla sint</a>
+                <span>$30</span>
+                <span class="rating"></span>
+            </li>
+            <li>
+                <img src="images/thumb-1.jpg">
+                <a href="">Fugiat nulla sint</a>
+                <span>$30</span>
+                <span class="rating"></span>
+            </li>
+        </ul>
+    </section>
+</div>
+<!-- End homepage content -->
+
+<footer>
+    <div class="wrapper">
+        <ul>
+            <li>New York Restaurant</li>
+            <li>3926 Anmoore Road</li>
+            <li>New York, NY 10014</li>
+            <li>718-749-1714</li>
+        </ul>
+        <ul>
+            <li>France Restaurant</li>
+            <li>68, rue da le Couronne</li>
+            <li>75002 PARIS</li>
+            <li>02.94.23.69.56</li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">Blog</a>
+            </li>
+            <li>
+                <a href="">Careers</a>
+            </li>
+            <li>
+                <a href="">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="images/white-logo.png" alt="logo">
+            </li>
+            <li>&copy; All rights reserved 2015</li>
+
+        </ul>
+    </div>
+</footer>
+<!-- BOOTSTRAP: Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- CUSTOM JS -->
+<script src="js/menu.js"></script>
 </body>
 
 </html>

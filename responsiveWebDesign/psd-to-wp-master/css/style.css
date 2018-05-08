@@ -1,4 +1,6 @@
-
+/* * {
+    box-sizing: border-box;
+} */
 body{
     font-family: Georgia;
     margin: 0;
@@ -12,7 +14,7 @@ body{
 }
 
 h1.logo{
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     width: 100px;
     text-indent: -10000px;
@@ -50,7 +52,7 @@ header nav li a{
 }
 
 #home-menu h2{
-    background-image: url(images/menu-head.png);
+    background-image: url(../images/menu-head.png);
     background-repeat: no-repeat;
     width: 156px;
     height: 74px;
@@ -181,15 +183,106 @@ footer a{
     text-decoration: none;
 }
 
-/* MEDIA QUERIES */
+/***** MEDIA QUERIES *****/
+/* TABLETS */
 @media screen and (max-width: 770px) {
+    body {
+        background-color: #fcc3;
+    }
+    header nav {
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+    header nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    h1.logo{
+        margin: 10px auto 0;
+        float: none;
+    }
+    header nav ul li {
+        margin: 10px 0;
+        width: 20%;
+        padding: 0;
+        text-align: center;
+    }
+    #main-banner img {
+        position: relative;
+        width: 130%;
+        left: -15%;
+    }
     #featured li {
-        width: 46%;
+        width: 45vw;
+        border: 5px solid red;
+        box-sizing: border-box;
+        margin: 0.3em;
+        padding: 0;
+        border: 0;
+    }
+    footer ul {
+        width: 46vw;
+        text-align: center;
     }
 }
-
+/* MOBILES */
 @media screen and (max-width: 420px) {
+    body {
+        background-color: #ffc3;
+    }
+    .burger-nav {
+        display: block;
+        height: 45px;
+        width: 100%;
+        background: url("../images/icone-menu.png") no-repeat 97% center;
+        background-size: 30px;
+        cursor: pointer;
+        background-color: #333;
+    }
+    header .wrapper {
+        width: 100%;
+        padding: 0;
+    }
+    header nav ul {
+        overflow: hidden;
+        background: #555;
+        height: 0;
+    }
+    header nav ul.open {
+        height: auto;
+    }
+    header nav ul li {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul li a {
+        color: #fff;
+        padding: 10px;
+        border-bottom: 2px solid #333;
+        display: block;
+        margin: 0;
+    }
+    #main-banner img {
+        position: relative;
+        width: 150%;
+        left: -25%;
+    }
+    #home-menu li {
+        float: none;
+        width: 94%;
+        margin: 0.6em 0.2em;
+    }
     #featured li {
-        width: 92%;
+        width: 92vw;
+        border: 3px solid yellow;
+        margin: 1.5em 0 0.1em;
+        padding: 0;
+        border: 0;
+    }
+    footer ul {
+        width: 98%;
     }
 }
